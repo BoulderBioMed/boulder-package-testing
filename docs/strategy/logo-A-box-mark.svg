@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 120" width="480" height="120">
+  <!-- Boulder Package Testing — Concept A: Box Mark -->
+  <!-- Brand palette: navy #0B2545, teal #3DA9C7, light gray #F2F4F7 -->
+  <defs>
+    <style>
+      .navy { fill: #0B2545; }
+      .teal { fill: #3DA9C7; }
+      .navy-stroke { stroke: #0B2545; fill: none; stroke-width: 2.5; stroke-linejoin: round; stroke-linecap: round; }
+      .teal-stroke { stroke: #3DA9C7; fill: none; stroke-width: 2.5; stroke-linejoin: round; stroke-linecap: round; }
+      .wordmark { font-family: -apple-system, "Helvetica Neue", Arial, sans-serif; font-weight: 600; }
+      .tagline { font-family: -apple-system, "Helvetica Neue", Arial, sans-serif; font-weight: 400; letter-spacing: 0.18em; }
+    </style>
+  </defs>
+
+  <!-- Icon: isometric box with subtle "tested" check inside -->
+  <g transform="translate(20, 18)">
+    <!-- Top face -->
+    <polygon class="teal" points="42,0 84,16 42,32 0,16" opacity="0.95"/>
+    <!-- Left face -->
+    <polygon class="navy" points="0,16 42,32 42,80 0,64"/>
+    <!-- Right face -->
+    <polygon class="navy" points="84,16 42,32 42,80 84,64" opacity="0.85"/>
+    <!-- Seam line -->
+    <line class="navy-stroke" x1="42" y1="32" x2="42" y2="80" opacity="0.4"/>
+    <!-- Check inside box (subtle, on right face) -->
+    <polyline points="54,52 62,60 76,42" stroke="#3DA9C7" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Wordmark -->
+  <text x="130" y="58" class="wordmark navy" font-size="28">Boulder</text>
+  <text x="130" y="88" class="wordmark teal" font-size="28">Package Testing</text>
+
+  <!-- Tagline rule + standards row -->
+  <line x1="130" y1="100" x2="450" y2="100" stroke="#0B2545" stroke-width="0.75" opacity="0.4"/>
+  <text x="130" y="113" class="tagline navy" font-size="8" opacity="0.7">ISO 11607  ·  ASTM D4169  ·  ASTM F1980  ·  ISTA 3A</text>
+</svg>
