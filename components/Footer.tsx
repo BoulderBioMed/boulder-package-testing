@@ -32,7 +32,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company info */}
           <div>
-            <img src="/logo.svg" alt="Boulder Package Testing" className="h-10 w-auto invert brightness-200 mb-4" />
+            <img src="/logo-on-dark.svg" alt="Boulder Package Testing" className="h-14 w-auto mb-4" />
             <p className="text-sm text-white/70 mb-4">
               Medical device package validation under ISO 11607-1/-2, ASTM D4169, ASTM F1980, and the ISTA test series. A member of the Boulder BioMed family of companies.
             </p>
