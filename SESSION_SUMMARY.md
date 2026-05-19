@@ -3,6 +3,8 @@
 **Date:** 2026-05-18
 **Mode:** autopilot
 **Working directory:** `C:\Users\jimka\Documents\GitHub-BoulderBioMed\boulder-package-testing`
+**Vercel Preview URL:** https://boulder-package-testing.vercel.app
+**GitHub Repo:** https://github.com/jim0425/boulder-package-testing
 
 ---
 
