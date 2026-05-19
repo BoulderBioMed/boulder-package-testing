@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 120" width="480" height="120">
+  <!-- Boulder Package Testing — Concept B: Seal / Peel Mark -->
+  <!-- References sterile barrier seal integrity (ASTM F88 peel test) -->
+  <defs>
+    <style>
+      .navy { fill: #0B2545; }
+      .teal { fill: #3DA9C7; }
+      .wordmark { font-family: -apple-system, "Helvetica Neue", Arial, sans-serif; font-weight: 600; }
+      .tagline { font-family: -apple-system, "Helvetica Neue", Arial, sans-serif; font-weight: 400; letter-spacing: 0.18em; }
+    </style>
+  </defs>
+
+  <!-- Icon: two layers being peeled apart — sterile barrier metaphor -->
+  <g transform="translate(20, 20)">
+    <!-- Bottom (tray) layer -->
+    <path d="M 5,68 L 5,55 Q 5,48 12,48 L 75,48 Q 82,48 82,55 L 82,68 Z"
+          class="navy"/>
+    <!-- Top (lid) layer — being peeled up -->
+    <path d="M 5,48 L 5,40 Q 5,33 12,33 L 50,33 Q 65,33 78,18 L 82,12 L 82,48 Z"
+          class="teal" opacity="0.95"/>
+    <!-- Seal line accent -->
+    <line x1="12" y1="48" x2="75" y2="48" stroke="#FFFFFF" stroke-width="1.5" opacity="0.6"/>
+    <!-- Three small dots indicating dye penetration test -->
+    <circle cx="22" cy="60" r="2.2" fill="#3DA9C7"/>
+    <circle cx="42" cy="60" r="2.2" fill="#3DA9C7"/>
+    <circle cx="62" cy="60" r="2.2" fill="#3DA9C7"/>
+  </g>
+
+  <!-- Wordmark -->
+  <text x="130" y="58" class="wordmark navy" font-size="28">Boulder</text>
+  <text x="130" y="88" class="wordmark teal" font-size="28">Package Testing</text>
+
+  <!-- Tagline rule + standards row -->
+  <line x1="130" y1="100" x2="450" y2="100" stroke="#0B2545" stroke-width="0.75" opacity="0.4"/>
+  <text x="130" y="113" class="tagline navy" font-size="8" opacity="0.7">ISO 11607  ·  ASTM D4169  ·  ASTM F1980  ·  ISTA 3A</text>
+</svg>
