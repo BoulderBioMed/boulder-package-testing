@@ -35,9 +35,9 @@ export default function Nav() {
   return (
     <nav className="bg-navy text-white sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-20 md:h-32">
           <Link href="/" className="flex items-center gap-3 shrink-0">
-            <img src="/logo-on-dark.svg" alt="Boulder Package Testing" className="h-14 w-auto" />
+            <img src="/logo-on-dark.svg" alt="Boulder Package Testing" className="h-16 md:h-28 w-auto" />
           </Link>
 
           {/* Desktop nav */}
