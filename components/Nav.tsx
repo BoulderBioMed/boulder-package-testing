@@ -24,6 +24,7 @@ const navLinks = [
   ]},
   { href: '/about', label: 'About' },
   { href: '/family', label: 'Our Family' },
+  { href: '/resources', label: 'Resources' },
   { href: '/faq', label: 'FAQ' },
   { href: '/contact', label: 'Contact' },
 ];

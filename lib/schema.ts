@@ -1,8 +1,8 @@
-const SITE_URL = 'https://boulderpackagetesting.com';
+const SITE_URL = 'https://boulderpackagetest.com';
 const ORG_NAME = 'Boulder Package Testing';
 const PARENT_ORG = 'Boulder BioMed';
 const ADDRESS = {
-  streetAddress: '5421 Western Ave.',
+  streetAddress: '5375 Western Ave.',
   addressLocality: 'Boulder',
   addressRegion: 'CO',
   postalCode: '80301',
@@ -10,7 +10,7 @@ const ADDRESS = {
 };
 const GEO = { latitude: 40.0274, longitude: -105.2519 };
 const PHONE = '303-531-1238';
-const EMAIL = 'info@boulderpackagetesting.com';
+const EMAIL = 'info@boulderpackagetest.com';
 
 export function organizationSchema() {
   return {
@@ -88,6 +88,72 @@ export function faqPageSchema(faqs: { question: string; answer: string }[]) {
         text: faq.answer,
       },
     })),
+  };
+}
+
+export function personSchema(person: {
+  name: string;
+  jobTitle: string;
+  description: string;
+  url: string;
+  worksFor?: string;
+  knowsAbout?: string[];
+  memberOf?: string[];
+}) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    name: person.name,
+    jobTitle: person.jobTitle,
+    description: person.description,
+    url: `${SITE_URL}${person.url}`,
+    worksFor: {
+      '@type': 'Organization',
+      name: person.worksFor ?? ORG_NAME,
+      url: SITE_URL,
+    },
+    ...(person.knowsAbout ? { knowsAbout: person.knowsAbout } : {}),
+    ...(person.memberOf
+      ? { memberOf: person.memberOf.map((name) => ({ '@type': 'Organization', name })) }
+      : {}),
+  };
+}
+
+export function articleSchema(article: {
+  headline: string;
+  description: string;
+  url: string;
+  datePublished: string;
+  dateModified?: string;
+  authorName: string;
+  authorUrl: string;
+}) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: article.headline,
+    description: article.description,
+    url: `${SITE_URL}${article.url}`,
+    datePublished: article.datePublished,
+    dateModified: article.dateModified ?? article.datePublished,
+    author: {
+      '@type': 'Person',
+      name: article.authorName,
+      url: `${SITE_URL}${article.authorUrl}`,
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: ORG_NAME,
+      url: SITE_URL,
+      logo: {
+        '@type': 'ImageObject',
+        url: `${SITE_URL}/logo.svg`,
+      },
+    },
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': `${SITE_URL}${article.url}`,
+    },
   };
 }
 

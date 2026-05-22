@@ -6,8 +6,8 @@ import { serviceSchema, faqPageSchema, breadcrumbSchema } from '@/lib/schema';
 export const metadata: Metadata = {
   title: iso11607.metaTitle,
   description: iso11607.metaDescription,
-  alternates: { canonical: 'https://boulderpackagetesting.com/standards/iso-11607' },
-  openGraph: { title: iso11607.metaTitle, description: iso11607.metaDescription, url: 'https://boulderpackagetesting.com/standards/iso-11607', type: 'website', images: [{ url: '/og-image.png', width: 1200, height: 630 }] },
+  alternates: { canonical: 'https://boulderpackagetest.com/standards/iso-11607' },
+  openGraph: { title: iso11607.metaTitle, description: iso11607.metaDescription, url: 'https://boulderpackagetest.com/standards/iso-11607', type: 'website', images: [{ url: '/og-image.png', width: 1200, height: 630 }] },
 };
 
 export default function Page() {

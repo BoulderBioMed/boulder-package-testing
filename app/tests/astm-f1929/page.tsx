@@ -8,8 +8,8 @@ const standard = standards.find((s) => s.slug === 'astm-f1929')!;
 export const metadata: Metadata = {
   title: standard.metaTitle,
   description: standard.metaDescription,
-  alternates: { canonical: 'https://boulderpackagetesting.com/tests/astm-f1929' },
-  openGraph: { title: standard.metaTitle, description: standard.metaDescription, url: 'https://boulderpackagetesting.com/tests/astm-f1929', type: 'website', images: [{ url: '/og-image.png', width: 1200, height: 630 }] },
+  alternates: { canonical: 'https://boulderpackagetest.com/tests/astm-f1929' },
+  openGraph: { title: standard.metaTitle, description: standard.metaDescription, url: 'https://boulderpackagetest.com/tests/astm-f1929', type: 'website', images: [{ url: '/og-image.png', width: 1200, height: 630 }] },
 };
 
 export default function Page() {

@@ -5,8 +5,8 @@ import { breadcrumbSchema, faqPageSchema } from '@/lib/schema';
 export const metadata: Metadata = {
   title: 'Orthopedic Device Package Testing',
   description: 'Package validation for orthopedic implants and instruments. Distribution simulation, accelerated aging, and sterile barrier integrity testing in Boulder, CO.',
-  alternates: { canonical: 'https://boulderpackagetesting.com/industries/orthopedic' },
-  openGraph: { title: 'Orthopedic Device Package Testing | Boulder Package Testing', description: 'Package validation for orthopedic implants and instruments.', url: 'https://boulderpackagetesting.com/industries/orthopedic', type: 'website', images: [{ url: '/og-image.png', width: 1200, height: 630 }] },
+  alternates: { canonical: 'https://boulderpackagetest.com/industries/orthopedic' },
+  openGraph: { title: 'Orthopedic Device Package Testing | Boulder Package Testing', description: 'Package validation for orthopedic implants and instruments.', url: 'https://boulderpackagetest.com/industries/orthopedic', type: 'website', images: [{ url: '/og-image.png', width: 1200, height: 630 }] },
 };
 
 const faqs = [

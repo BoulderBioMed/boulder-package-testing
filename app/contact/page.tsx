@@ -6,8 +6,8 @@ import { breadcrumbSchema } from '@/lib/schema';
 export const metadata: Metadata = {
   title: 'Contact Boulder Package Testing',
   description: 'Request a quote for medical device package validation. Distribution simulation, accelerated aging, seal testing, and sterile barrier integrity in Boulder, CO.',
-  alternates: { canonical: 'https://boulderpackagetesting.com/contact' },
-  openGraph: { title: 'Contact Boulder Package Testing', description: 'Request a quote for medical device package validation.', url: 'https://boulderpackagetesting.com/contact', type: 'website', images: [{ url: '/og-image.png', width: 1200, height: 630 }] },
+  alternates: { canonical: 'https://boulderpackagetest.com/contact' },
+  openGraph: { title: 'Contact Boulder Package Testing', description: 'Request a quote for medical device package validation.', url: 'https://boulderpackagetest.com/contact', type: 'website', images: [{ url: '/og-image.png', width: 1200, height: 630 }] },
 };
 
 export default function Page() {
@@ -49,7 +49,7 @@ export default function Page() {
                 </div>
                 <div>
                   <p className="font-medium text-navy">Email</p>
-                  <a href="mailto:info@boulderpackagetesting.com" className="text-teal hover:underline">info@boulderpackagetesting.com</a>
+                  <a href="mailto:info@boulderpackagetest.com" className="text-teal hover:underline">info@boulderpackagetest.com</a>
                 </div>
               </div>
             </div>
@@ -57,7 +57,7 @@ export default function Page() {
             <div className="bg-gray-light rounded-lg p-6">
               <h3 className="font-semibold text-navy mb-3">Location</h3>
               <p className="text-sm text-navy/70">
-                5421 Western Ave.<br />
+                5375 Western Ave.<br />
                 Boulder, CO 80301<br />
                 United States
               </p>

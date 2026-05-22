@@ -37,10 +37,10 @@ export default function Footer() {
               Medical device package validation under ISO 11607-1/-2, ASTM D4169, ASTM F1980, and the ISTA test series. A member of the Boulder BioMed family of companies.
             </p>
             <div className="text-sm text-white/70 space-y-1">
-              <p>5421 Western Ave.</p>
+              <p>5375 Western Ave.</p>
               <p>Boulder, CO 80301</p>
               <p><a href="tel:303-531-1238" className="hover:text-teal transition-colors">303-531-1238</a></p>
-              <p><a href="mailto:info@boulderpackagetesting.com" className="hover:text-teal transition-colors">info@boulderpackagetesting.com</a></p>
+              <p><a href="mailto:info@boulderpackagetest.com" className="hover:text-teal transition-colors">info@boulderpackagetest.com</a></p>
             </div>
           </div>
 
@@ -73,7 +73,9 @@ export default function Footer() {
                 <h3 className="text-sm font-semibold mb-2 text-teal">Company</h3>
               </li>
               <li><Link href="/about" className="text-sm text-white/70 hover:text-teal transition-colors">About</Link></li>
+              <li><Link href="/about/jim-kasic" className="text-sm text-white/70 hover:text-teal transition-colors">Jim Kasic — Founder</Link></li>
               <li><Link href="/family" className="text-sm text-white/70 hover:text-teal transition-colors">Our Family</Link></li>
+              <li><Link href="/resources" className="text-sm text-white/70 hover:text-teal transition-colors">Resources</Link></li>
               <li><Link href="/faq" className="text-sm text-white/70 hover:text-teal transition-colors">FAQ</Link></li>
               <li><Link href="/contact" className="text-sm text-white/70 hover:text-teal transition-colors">Contact</Link></li>
             </ul>

@@ -50,7 +50,7 @@ export const faqs: FAQ[] = [
   },
   {
     question: 'Where are you located?',
-    answer: 'Boulder Package Testing is located at 5421 Western Ave., Boulder, CO 80301, on the same campus as Boulder Sterilization, Boulder iQ, Boulder RA/QA, and Boulder BioLabs. We serve the Mountain West medtech corridor including Colorado, Utah, Arizona, New Mexico, Wyoming, and Montana.',
+    answer: 'Boulder Package Testing is located at 5375 Western Ave., Boulder, CO 80301, on the same campus as Boulder Sterilization, Boulder iQ, Boulder RA/QA, and Boulder BioLabs. We serve medical device manufacturers nationwide as the only US package testing lab co-located with EO and chlorine dioxide sterilization.',
   },
   {
     question: 'How do I get started with a packaging validation project?',

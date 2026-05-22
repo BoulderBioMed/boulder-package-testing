@@ -6,8 +6,8 @@ import { faqPageSchema, breadcrumbSchema } from '@/lib/schema';
 export const metadata: Metadata = {
   title: 'FAQ — Medical Device Package Testing',
   description: 'Frequently asked questions about medical device package validation, ISO 11607, ISTA 3A, ASTM F1980 accelerated aging, and sterile barrier testing.',
-  alternates: { canonical: 'https://boulderpackagetesting.com/faq' },
-  openGraph: { title: 'FAQ | Boulder Package Testing', description: 'Answers to common questions about medical device package validation.', url: 'https://boulderpackagetesting.com/faq', type: 'website', images: [{ url: '/og-image.png', width: 1200, height: 630 }] },
+  alternates: { canonical: 'https://boulderpackagetest.com/faq' },
+  openGraph: { title: 'FAQ | Boulder Package Testing', description: 'Answers to common questions about medical device package validation.', url: 'https://boulderpackagetest.com/faq', type: 'website', images: [{ url: '/og-image.png', width: 1200, height: 630 }] },
 };
 
 export default function Page() {

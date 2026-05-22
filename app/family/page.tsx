@@ -5,8 +5,8 @@ import { breadcrumbSchema } from '@/lib/schema';
 export const metadata: Metadata = {
   title: 'The Boulder BioMed Family of Companies',
   description: 'Five companies, one campus, one quality system. Boulder iQ, Boulder Sterilization, Boulder RA/QA, Boulder BioLabs, and Boulder Package Testing.',
-  alternates: { canonical: 'https://boulderpackagetesting.com/family' },
-  openGraph: { title: 'The Boulder BioMed Family | Boulder Package Testing', description: 'Five medical device companies on one Boulder, CO campus.', url: 'https://boulderpackagetesting.com/family', type: 'website', images: [{ url: '/og-image.png', width: 1200, height: 630 }] },
+  alternates: { canonical: 'https://boulderpackagetest.com/family' },
+  openGraph: { title: 'The Boulder BioMed Family | Boulder Package Testing', description: 'Five medical device companies on one Boulder, CO campus.', url: 'https://boulderpackagetest.com/family', type: 'website', images: [{ url: '/og-image.png', width: 1200, height: 630 }] },
 };
 
 const companies = [
@@ -36,7 +36,7 @@ const companies = [
   },
   {
     name: 'Boulder Package Testing',
-    url: 'https://boulderpackagetesting.com',
+    url: 'https://boulderpackagetest.com',
     description: 'Medical Device Package Validation',
     detail: 'Contract package testing lab executing ISTA-aligned test methods and ISO 17025-aligned protocols. Distribution simulation, accelerated aging, seal testing, and sterile barrier integrity — co-located with sterilization on the same campus.',
     current: true,

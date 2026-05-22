@@ -10,11 +10,11 @@ export const metadata: Metadata = {
     template: '%s | Boulder Package Testing',
   },
   description: 'Medical device package validation lab executing ISTA-aligned test methods and ISO 17025-aligned protocols. Co-located with EO and chlorine dioxide sterilization in Boulder, CO.',
-  metadataBase: new URL('https://boulderpackagetesting.com'),
+  metadataBase: new URL('https://boulderpackagetest.com'),
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://boulderpackagetesting.com',
+    url: 'https://boulderpackagetest.com',
     siteName: 'Boulder Package Testing',
     title: 'Boulder Package Testing | Medical Device Package Validation',
     description: 'Sterile barrier and distribution testing, co-located with sterilization. ISO 11607, ASTM D4169, ASTM F1980, ISTA 3A.',
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     images: ['/og-image.png'],
   },
   robots: { index: true, follow: true },
-  alternates: { canonical: 'https://boulderpackagetesting.com' },
+  alternates: { canonical: 'https://boulderpackagetest.com' },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

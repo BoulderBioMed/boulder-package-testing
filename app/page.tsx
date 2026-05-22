@@ -9,7 +9,7 @@ import { faqPageSchema } from '@/lib/schema';
 export const metadata: Metadata = {
   title: 'Boulder Package Testing | Medical Device Package Validation',
   description: 'Sterile barrier and distribution testing co-located with EO and chlorine dioxide sterilization. ISO 11607, ISTA 3A, ASTM D4169, ASTM F1980 in Boulder, CO.',
-  alternates: { canonical: 'https://boulderpackagetesting.com' },
+  alternates: { canonical: 'https://boulderpackagetest.com' },
 };
 
 const services = [
@@ -46,8 +46,29 @@ const workflowSteps = [
 const whyBoulder = [
   { title: 'Co-located with sterilization', desc: 'Devices sterilized by Boulder Sterilization (EO or chlorine dioxide) move directly to package testing without leaving the campus.' },
   { title: 'One protocol, one report, one quality system', desc: 'Distribution, aging, and integrity testing share documentation, sample IDs, and chain of custody under the Boulder BioMed quality system.' },
-  { title: 'Built for the Mountain West medtech corridor', desc: 'Located in the Colorado Front Range, we serve a region (CO, UT, AZ, NM, WY, MT) that has historically had no major package testing lab.' },
+  { title: 'Built for Medical Device Companies Who Need Results, Not Round Trips', desc: 'Medical device companies across the country have sent packaging samples to California or Minnesota for validation testing. Boulder Package Testing changes that equation. Co-located with EO and chlorine dioxide sterilization on a single Boulder, Colorado campus, we eliminate re-sterilization risk, reduce transit time, and maintain an unbroken chain of custody from sterilization through final validated report.' },
   { title: 'Backed by the Boulder BioMed family', desc: 'Engineering and design (Boulder iQ), regulatory and quality (Boulder RA/QA), microbiology (Boulder BioLabs), sterilization, and now package testing.' },
+];
+
+const testimonials = [
+  {
+    quote:
+      "Jim's expertise caught something our internal team had missed entirely. By taking a half-inch off our tray length, we went from needing a large, custom sealing machine to a standard off-the-shelf sealer — and our package shifted to a standard off-the-shelf pouch size. The savings on tooling alone paid for the validation program.",
+    role: 'Vice President of Operations',
+    company: 'Colorado orthopedic device startup',
+  },
+  {
+    quote:
+      'We had budgeted for tray tooling and a full thermoforming qualification. Boulder walked us through why a card-and-pouch configuration would work for our device geometry — and get us to market in half the time at a fraction of the cost. We were shipping product four months sooner than our original plan.',
+    role: 'CEO',
+    company: 'Early-stage surgical device company',
+  },
+  {
+    quote:
+      'Before we ran a single test, Boulder reviewed our package design and identified three issues that would have caused us to fail distribution testing. By the time we ran samples, we already knew the design was right. We passed on the first run.',
+    role: 'Packaging Engineer',
+    company: 'IVD manufacturer',
+  },
 ];
 
 const homeFaqs = [
@@ -130,6 +151,29 @@ export default function HomePage() {
                   <p className="text-sm text-white/70">{item.desc}</p>
                 </div>
               </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials */}
+      <section className="bg-gray-light py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl font-bold text-navy text-center mb-2">What Our Clients Say</h2>
+          <p className="text-center text-navy/60 mb-10">Anonymized client feedback from medical device companies we have supported.</p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {testimonials.map((t, i) => (
+              <figure key={i} className="bg-white border border-gray-medium/20 rounded-lg p-6 flex flex-col">
+                <blockquote className="text-sm text-navy/80 leading-relaxed flex-1">
+                  <p className="text-teal text-3xl leading-none mb-2">&ldquo;</p>
+                  {t.quote}
+                </blockquote>
+                <figcaption className="mt-4 pt-4 border-t border-gray-medium/20 text-sm">
+                  <span className="font-semibold text-navy">{t.role}</span>
+                  <br />
+                  <span className="text-navy/60">{t.company}</span>
+                </figcaption>
+              </figure>
             ))}
           </div>
         </div>

@@ -5,8 +5,8 @@ import { breadcrumbSchema, faqPageSchema } from '@/lib/schema';
 export const metadata: Metadata = {
   title: 'Dental Device Package Testing',
   description: 'Package validation for dental implants, instruments, and sterile dental devices. ISO 11607 validation and distribution testing in Boulder, CO.',
-  alternates: { canonical: 'https://boulderpackagetesting.com/industries/dental' },
-  openGraph: { title: 'Dental Device Package Testing | Boulder Package Testing', description: 'Package validation for dental devices and implants.', url: 'https://boulderpackagetesting.com/industries/dental', type: 'website', images: [{ url: '/og-image.png', width: 1200, height: 630 }] },
+  alternates: { canonical: 'https://boulderpackagetest.com/industries/dental' },
+  openGraph: { title: 'Dental Device Package Testing | Boulder Package Testing', description: 'Package validation for dental devices and implants.', url: 'https://boulderpackagetest.com/industries/dental', type: 'website', images: [{ url: '/og-image.png', width: 1200, height: 630 }] },
 };
 
 const faqs = [

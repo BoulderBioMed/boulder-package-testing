@@ -5,8 +5,8 @@ import { breadcrumbSchema, faqPageSchema } from '@/lib/schema';
 export const metadata: Metadata = {
   title: 'Cardiovascular Device Package Testing',
   description: 'Package validation for cardiovascular devices including stents, catheters, and pacemakers. ISO 11607 sterile barrier testing in Boulder, CO.',
-  alternates: { canonical: 'https://boulderpackagetesting.com/industries/cardiovascular' },
-  openGraph: { title: 'Cardiovascular Device Package Testing | Boulder Package Testing', description: 'Package validation for cardiovascular devices.', url: 'https://boulderpackagetesting.com/industries/cardiovascular', type: 'website', images: [{ url: '/og-image.png', width: 1200, height: 630 }] },
+  alternates: { canonical: 'https://boulderpackagetest.com/industries/cardiovascular' },
+  openGraph: { title: 'Cardiovascular Device Package Testing | Boulder Package Testing', description: 'Package validation for cardiovascular devices.', url: 'https://boulderpackagetest.com/industries/cardiovascular', type: 'website', images: [{ url: '/og-image.png', width: 1200, height: 630 }] },
 };
 
 const faqs = [

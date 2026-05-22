@@ -8,11 +8,11 @@ const standard = standards.find((s) => s.slug === 'ista-3a')!;
 export const metadata: Metadata = {
   title: standard.metaTitle,
   description: standard.metaDescription,
-  alternates: { canonical: 'https://boulderpackagetesting.com/tests/ista-3a' },
+  alternates: { canonical: 'https://boulderpackagetest.com/tests/ista-3a' },
   openGraph: {
     title: standard.metaTitle,
     description: standard.metaDescription,
-    url: 'https://boulderpackagetesting.com/tests/ista-3a',
+    url: 'https://boulderpackagetest.com/tests/ista-3a',
     type: 'website',
     images: [{ url: '/og-image.png', width: 1200, height: 630 }],
   },

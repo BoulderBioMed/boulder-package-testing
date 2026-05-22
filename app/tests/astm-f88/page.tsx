@@ -8,11 +8,11 @@ const standard = standards.find((s) => s.slug === 'astm-f88')!;
 export const metadata: Metadata = {
   title: standard.metaTitle,
   description: standard.metaDescription,
-  alternates: { canonical: 'https://boulderpackagetesting.com/tests/astm-f88' },
+  alternates: { canonical: 'https://boulderpackagetest.com/tests/astm-f88' },
   openGraph: {
     title: standard.metaTitle,
     description: standard.metaDescription,
-    url: 'https://boulderpackagetesting.com/tests/astm-f88',
+    url: 'https://boulderpackagetest.com/tests/astm-f88',
     type: 'website',
     images: [{ url: '/og-image.png', width: 1200, height: 630 }],
   },

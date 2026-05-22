@@ -118,7 +118,7 @@ export default function TestPageLayout({ standard }: TestPageLayoutProps) {
               <h3 className="font-semibold mb-2">Talk to Our Team</h3>
               <p className="text-sm text-white/70 mb-3">Discuss your {standard.name} project scope and timeline.</p>
               <p className="text-sm"><a href="tel:303-531-1238" className="text-teal hover:underline">303-531-1238</a></p>
-              <p className="text-sm"><a href="mailto:info@boulderpackagetesting.com" className="text-teal hover:underline">info@boulderpackagetesting.com</a></p>
+              <p className="text-sm"><a href="mailto:info@boulderpackagetest.com" className="text-teal hover:underline">info@boulderpackagetest.com</a></p>
             </div>
           </aside>
         </div>

@@ -5,8 +5,8 @@ import { breadcrumbSchema, faqPageSchema } from '@/lib/schema';
 export const metadata: Metadata = {
   title: 'IVD Package Testing — In Vitro Diagnostics',
   description: 'Package validation for in vitro diagnostic devices and test kits. Distribution simulation, aging, and sterile barrier testing in Boulder, CO.',
-  alternates: { canonical: 'https://boulderpackagetesting.com/industries/ivd' },
-  openGraph: { title: 'IVD Package Testing | Boulder Package Testing', description: 'Package validation for in vitro diagnostic devices.', url: 'https://boulderpackagetesting.com/industries/ivd', type: 'website', images: [{ url: '/og-image.png', width: 1200, height: 630 }] },
+  alternates: { canonical: 'https://boulderpackagetest.com/industries/ivd' },
+  openGraph: { title: 'IVD Package Testing | Boulder Package Testing', description: 'Package validation for in vitro diagnostic devices.', url: 'https://boulderpackagetest.com/industries/ivd', type: 'website', images: [{ url: '/og-image.png', width: 1200, height: 630 }] },
 };
 
 const faqs = [

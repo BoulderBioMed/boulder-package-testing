@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://boulderpackagetesting.com/sitemap.xml',
+    sitemap: 'https://boulderpackagetest.com/sitemap.xml',
   };
 }

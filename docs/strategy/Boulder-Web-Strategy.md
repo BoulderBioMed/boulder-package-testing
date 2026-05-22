@@ -5,7 +5,7 @@
 
 ## Executive summary
 
-Five Boulder-branded properties (boulderbiomed.com, boulderiq.com, bouldersterilization.com, boulderraqa.com, boulderbiolabs.com) operate as five disconnected sites with weak SEO. Combined web authority is being wasted. Recommendation: rebuild as hub-and-spoke architecture with boulderbiomed.com as authority hub. Launch new swim lane "Boulder Package Testing" at boulderpackagetesting.com using the existing Manus prototype as the starting point.
+Five Boulder-branded properties (boulderbiomed.com, boulderiq.com, bouldersterilization.com, boulderraqa.com, boulderbiolabs.com) operate as five disconnected sites with weak SEO. Combined web authority is being wasted. Recommendation: rebuild as hub-and-spoke architecture with boulderbiomed.com as authority hub. Launch new swim lane "Boulder Package Testing" at boulderpackagetest.com using the existing Manus prototype as the starting point.
 
 ## Current state audit — all five legacy sites
 
@@ -63,7 +63,7 @@ Five Boulder-branded properties (boulderbiomed.com, boulderiq.com, bouldersteril
 
 ## Recommended swim-lane name
 
-**Boulder Package Testing** at `boulderpackagetesting.com`
+**Boulder Package Testing** at `boulderpackagetest.com`
 
 Rationale:
 - Direct match to search intent
@@ -159,9 +159,9 @@ Make **boulderbiomed.com** the authority hub. Currently the weakest of the five 
 ## Execution sequence
 
 1. **Today**: Fix boulderbiomed.NET typo in iQ + BioLabs footers (Jigawatts/Pite Creative ticket)
-2. **This week**: Confirm name + logo concept. Verify boulderpackagetesting.com is registered.
+2. **This week**: Confirm name + logo concept. Verify boulderpackagetest.com is registered.
 3. **Next 2 weeks**: Begin ISTA certification process. Begin ISO 17025 accreditation conversation.
-4. **Next 30 days**: Launch boulderpackagetesting.com as production site (clone Manus prototype, run through Pite Creative for brand alignment, host on own infrastructure)
+4. **Next 30 days**: Launch boulderpackagetest.com as production site (clone Manus prototype, run through Pite Creative for brand alignment, host on own infrastructure)
 5. **Next 60 days**: Add 8-10 standard-specific landing pages
 6. **Next 90 days**: Begin parent-hub authority strategy on boulderbiomed.com
 7. **Separate future project**: Full SEO optimization of all five existing legacy sites

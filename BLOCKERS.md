@@ -16,13 +16,13 @@ Items below require Jim's real-world input before the site is fully production-r
 
 ## Technical Blockers
 
-6. **Contact form email delivery** — The `/api/contact` route currently logs submissions to console. Need to wire to an email service (SendGrid, Resend, etc.) to actually deliver form submissions to `info@boulderpackagetesting.com`. Credentials go in `.env`.
+6. **Contact form email delivery** — The `/api/contact` route currently logs submissions to console. Need to wire to an email service (SendGrid, Resend, etc.) to actually deliver form submissions to `info@boulderpackagetest.com`. Credentials go in `.env`.
 
-7. **Domain setup** — Site assumes `boulderpackagetesting.com` as the canonical domain. DNS must be configured and domain connected to Vercel before production launch.
+7. **Domain setup** — Site assumes `boulderpackagetest.com` as the canonical domain. DNS must be configured and domain connected to Vercel before production launch.
 
 8. **ISTA certification status** — All compliance language uses "ISTA-aligned protocols" and "ISO 17025-aligned QMS" per Jim's instruction. Update site language once actual ISTA certification and ISO 17025 accreditation are awarded.
 
-9. **Geo coordinates** — Used 40.0274, -105.2519 for the LocalBusiness schema (from build doc). Jim should verify this is the correct lat/lng for 5421 Western Ave, Boulder, CO 80301.
+9. **Geo coordinates** — Used 40.0274, -105.2519 for the LocalBusiness schema (from build doc). Jim should verify this is the correct lat/lng for 5375 Western Ave, Boulder, CO 80301.
 
 10. **Vercel deployment** — Vercel link and preview deployment not yet run (requires interactive auth). Jim should run `npx vercel link` and `npx vercel --prod=false` to deploy.
 
