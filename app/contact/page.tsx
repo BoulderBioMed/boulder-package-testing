@@ -45,7 +45,7 @@ export default function Page() {
               <div className="space-y-3 text-sm text-navy/70">
                 <div>
                   <p className="font-medium text-navy">Phone</p>
-                  <a href="tel:303-531-1238" className="text-teal hover:underline">303-531-1238</a>
+                  <a href="tel:3035311238" className="text-teal hover:underline">303-531-1238</a>
                 </div>
                 <div>
                   <p className="font-medium text-navy">Email</p>

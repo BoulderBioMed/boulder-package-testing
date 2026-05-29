@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { TrackedTel, TrackedExtLink } from '@/components/TrackedLinks';
 
 const familyCompanies = [
   { name: 'Boulder BioMed', url: 'https://boulderbiomed.com' },
@@ -39,7 +40,7 @@ export default function Footer() {
             <div className="text-sm text-white/70 space-y-1">
               <p>5375 Western Ave.</p>
               <p>Boulder, CO 80301</p>
-              <p><a href="tel:303-531-1238" className="hover:text-teal transition-colors">303-531-1238</a></p>
+              <p><TrackedTel number="3035311238" display="303-531-1238" location="footer" className="hover:text-teal transition-colors" /></p>
               <p><a href="mailto:info@boulderpackagetest.com" className="hover:text-teal transition-colors">info@boulderpackagetest.com</a></p>
             </div>
           </div>
@@ -87,14 +88,14 @@ export default function Footer() {
             <ul className="space-y-2">
               {familyCompanies.map((company) => (
                 <li key={company.url}>
-                  <a
+                  <TrackedExtLink
                     href={company.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    destination={company.name.toLowerCase().replace(/\s+/g, '-').replace(/[/]/g, '-')}
+                    location="footer-family"
                     className="text-sm text-white/70 hover:text-teal transition-colors"
                   >
                     {company.name} &rarr;
-                  </a>
+                  </TrackedExtLink>
                 </li>
               ))}
             </ul>

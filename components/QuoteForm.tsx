@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { trackEvent } from '@/components/Analytics';
 
 export default function QuoteForm() {
   const [submitted, setSubmitted] = useState(false);
@@ -21,6 +22,10 @@ export default function QuoteForm() {
       });
       if (res.ok) {
         setSubmitted(true);
+        trackEvent('quote_request_submitted', {
+          standards: body.standards,
+          timeline: body.timeline,
+        });
       }
     } catch {
       // Silently handle - form data is logged server-side
