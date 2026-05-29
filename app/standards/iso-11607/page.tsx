@@ -16,7 +16,7 @@ export default function Page() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema(iso11607.fullName, iso11607.description, '/standards/iso-11607')) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPageSchema(iso11607.faqs)) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema([{ name: 'Home', url: '/' }, { name: 'Standards', url: '/standards/iso-11607' }, { name: 'ISO 11607', url: '/standards/iso-11607' }])) }} />
-      <TestPageLayout standard={iso11607} />
+      <TestPageLayout standard={iso11607} image="/img/bpt-iso11607-validation.png" imageAlt="ISO 11607 sterile barrier validation program" />
     </>
   );
 }

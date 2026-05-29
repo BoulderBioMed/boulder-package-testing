@@ -4,9 +4,11 @@ import { type StandardInfo, getStandardBySlug } from '@/content/standards';
 
 interface TestPageLayoutProps {
   standard: StandardInfo;
+  image?: string;
+  imageAlt?: string;
 }
 
-export default function TestPageLayout({ standard }: TestPageLayoutProps) {
+export default function TestPageLayout({ standard, image, imageAlt }: TestPageLayoutProps) {
   const relatedStandards = standard.relatedSlugs
     .map(getStandardBySlug)
     .filter(Boolean) as StandardInfo[];
@@ -33,6 +35,12 @@ export default function TestPageLayout({ standard }: TestPageLayoutProps) {
           <p className="text-lg text-white/80 max-w-2xl">{standard.subtitle}</p>
         </div>
       </section>
+
+      {image && (
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-4">
+          <img src={image} alt={imageAlt || standard.name} className="w-full rounded-lg shadow-lg" style={{ aspectRatio: '16/9', objectFit: 'cover' }} />
+        </div>
+      )}
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">

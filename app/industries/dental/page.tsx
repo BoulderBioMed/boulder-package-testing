@@ -38,6 +38,10 @@ export default function Page() {
         </div>
       </section>
 
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-4">
+        <img src="/img/industry-dental.png" alt="Dental implants and surgical instruments" className="w-full rounded-lg shadow-lg" style={{ aspectRatio: '16/9', objectFit: 'cover' }} />
+      </div>
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="max-w-3xl space-y-10">
           <section>

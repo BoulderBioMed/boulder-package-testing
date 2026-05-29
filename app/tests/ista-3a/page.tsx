@@ -24,7 +24,7 @@ export default function Page() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema(standard.fullName, standard.description, '/tests/ista-3a')) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPageSchema(standard.faqs)) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema([{ name: 'Home', url: '/' }, { name: 'Test Methods', url: '/tests/ista-3a' }, { name: standard.name, url: '/tests/ista-3a' }])) }} />
-      <TestPageLayout standard={standard} />
+      <TestPageLayout standard={standard} image="/img/bpt-distribution-simulation.png" imageAlt="ISTA 3A parcel delivery simulation testing" />
     </>
   );
 }

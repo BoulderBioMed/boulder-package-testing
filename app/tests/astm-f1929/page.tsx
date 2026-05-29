@@ -18,7 +18,7 @@ export default function Page() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema(standard.fullName, standard.description, '/tests/astm-f1929')) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPageSchema(standard.faqs)) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema([{ name: 'Home', url: '/' }, { name: 'Test Methods', url: '/tests/ista-3a' }, { name: standard.name, url: '/tests/astm-f1929' }])) }} />
-      <TestPageLayout standard={standard} />
+      <TestPageLayout standard={standard} image="/img/bpt-sterile-barrier-dye-pen.png" imageAlt="ASTM F1929 sterile barrier dye penetration testing" />
     </>
   );
 }

@@ -24,7 +24,7 @@ export default function Page() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema(standard.fullName, standard.description, '/tests/astm-d4169')) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPageSchema(standard.faqs)) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema([{ name: 'Home', url: '/' }, { name: 'Test Methods', url: '/tests/ista-3a' }, { name: standard.name, url: '/tests/astm-d4169' }])) }} />
-      <TestPageLayout standard={standard} />
+      <TestPageLayout standard={standard} image="/img/bpt-distribution-simulation.png" imageAlt="Distribution simulation testing - drop, vibration, compression" />
     </>
   );
 }

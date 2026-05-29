@@ -24,7 +24,7 @@ export default function Page() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema(standard.fullName, standard.description, '/tests/astm-f1980')) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPageSchema(standard.faqs)) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema([{ name: 'Home', url: '/' }, { name: 'Test Methods', url: '/tests/ista-3a' }, { name: standard.name, url: '/tests/astm-f1980' }])) }} />
-      <TestPageLayout standard={standard} />
+      <TestPageLayout standard={standard} image="/img/bpt-accelerated-aging.png" imageAlt="ASTM F1980 accelerated aging environmental chamber" />
     </>
   );
 }
