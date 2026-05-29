@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import QuoteForm from '@/components/QuoteForm';
 import { type StandardInfo, getStandardBySlug } from '@/content/standards';
 
@@ -38,7 +39,7 @@ export default function TestPageLayout({ standard, image, imageAlt }: TestPageLa
 
       {image && (
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-4">
-          <img src={image} alt={imageAlt || standard.name} className="w-full rounded-lg shadow-lg" style={{ aspectRatio: '16/9', objectFit: 'cover' }} />
+          <Image src={image} alt={imageAlt || standard.name} width={1600} height={900} sizes="(max-width: 1280px) 100vw, 1280px" priority className="w-full rounded-lg shadow-lg h-auto" style={{ objectFit: 'cover' }} />
         </div>
       )}
 

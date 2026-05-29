@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import { breadcrumbSchema, faqPageSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
@@ -39,7 +40,7 @@ export default function Page() {
       </section>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-4">
-        <img src="/img/industry-orthopedic.png" alt="Orthopedic implants - spine, joint, trauma devices" className="w-full rounded-lg shadow-lg" style={{ aspectRatio: '16/9', objectFit: 'cover' }} />
+        <Image src="/img/industry-orthopedic.png" alt="Orthopedic implants - spine, joint, trauma devices" width={1600} height={900} sizes="(max-width: 1280px) 100vw, 1280px" priority className="w-full rounded-lg shadow-lg h-auto" style={{ objectFit: 'cover' }} />
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">

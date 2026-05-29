@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Hero() {
   return (
@@ -28,7 +29,7 @@ export default function Hero() {
             </div>
           </div>
           <div className="lg:col-span-2">
-            <img src="/img/bpt-hero-package-lab.png" alt="Boulder Package Testing lab - medical device package validation" className="w-full rounded-xl shadow-2xl" style={{ aspectRatio: '4/3', objectFit: 'cover' }} />
+            <Image src="/img/bpt-hero-package-lab.png" alt="Boulder Package Testing lab - medical device package validation" width={1200} height={900} sizes="(max-width: 1024px) 100vw, 40vw" priority className="w-full rounded-xl shadow-2xl h-auto" style={{ objectFit: 'cover' }} />
           </div>
         </div>
       </div>
