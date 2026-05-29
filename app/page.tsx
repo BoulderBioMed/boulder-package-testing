@@ -136,7 +136,21 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Why Boulder */}
+      
+      {/* Sister-site cross-link */}
+      <section className="bg-white pb-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-gray-light border border-gray-medium/20 rounded-lg p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4 border-l-4 border-l-teal">
+            <div className="flex-1">
+              <h3 className="text-base font-semibold text-navy mb-1">Need sterility, bioburden, or endotoxin testing too?</h3>
+              <p className="text-sm text-navy/70">Microbiology testing â€” sterility, bioburden, method suitability, LAL/endotoxin, EO and CD residuals â€” is run by our sister company Boulder BioLabs on the same campus. Samples move between the labs without leaving the campus.</p>
+            </div>
+            <a href="https://boulderbiolabs.com/" target="_blank" rel="noopener" className="shrink-0 inline-block bg-teal text-white px-5 py-2.5 rounded font-semibold text-sm hover:bg-teal/90 transition-colors whitespace-nowrap">Visit Boulder BioLabs &rarr;</a>
+          </div>
+        </div>
+      </section>
+
+{/* Why Boulder */}
       <section className="bg-navy text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl font-bold text-center mb-8">Why Boulder Package Testing?</h2>
