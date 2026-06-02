@@ -70,11 +70,6 @@ export default function Page() {
             </ul>
           </section>
 
-          <section className="bg-gray-light rounded-lg p-6">
-            <h2 className="text-xl font-bold text-navy mb-3">Case Study</h2>
-            <p className="text-navy/60 italic">Anonymized case study placeholder — contact us to discuss specific dental device packaging validation projects.</p>
-          </section>
-
           <section>
             <h2 className="text-xl font-bold text-navy mb-3">FAQ</h2>
             {faqs.map((faq) => (
