@@ -2,7 +2,7 @@
   <defs>
     <style>
       .light { fill: #FFFFFF; }
-      .teal { fill: #3DA9C7; }
+      .teal { fill: #2968A0; }
       .wordmark { font-family: -apple-system, "Helvetica Neue", Arial, sans-serif; font-weight: 600; }
       .tagline { font-family: -apple-system, "Helvetica Neue", Arial, sans-serif; font-weight: 400; letter-spacing: 0.18em; }
     </style>
@@ -12,7 +12,7 @@
     <polygon class="light" points="0,16 42,32 42,80 0,64"/>
     <polygon class="light" points="84,16 42,32 42,80 84,64" opacity="0.85"/>
     <line x1="42" y1="32" x2="42" y2="80" stroke="#FFFFFF" stroke-width="2.5" opacity="0.4" stroke-linecap="round"/>
-    <polyline points="54,52 62,60 76,42" stroke="#3DA9C7" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <polyline points="54,52 62,60 76,42" stroke="#2968A0" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
   </g>
   <text x="130" y="58" class="wordmark light" font-size="28">Boulder</text>
   <text x="130" y="88" class="wordmark teal" font-size="28">Package Testing</text>

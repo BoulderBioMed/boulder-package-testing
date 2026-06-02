@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
+import BoulderLockup from '@/components/BoulderLockup';
 
 const navLinks = [
   { href: '/tests/ista-3a', label: 'Test Methods', children: [
@@ -37,8 +38,8 @@ export default function Nav() {
     <nav className="bg-navy text-white sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20 md:h-32">
-          <Link href="/" className="flex items-center gap-3 shrink-0">
-            <img src="/logo-on-dark.svg" alt="Boulder Package Testing" className="h-16 md:h-28 w-auto" />
+          <Link href="/" className="flex items-center gap-3 shrink-0" aria-label="Boulder Package Testing — home">
+            <BoulderLockup word="Package Testing" variant="dark" size={28} />
           </Link>
 
           {/* Desktop nav */}

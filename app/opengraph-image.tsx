@@ -25,7 +25,7 @@ export default async function Image() {
             style={{
               width: '80px',
               height: '80px',
-              background: '#3DA9C7',
+              background: '#2968A0',
               borderRadius: '12px',
               display: 'flex',
               alignItems: 'center',
@@ -40,7 +40,7 @@ export default async function Image() {
         <div style={{ color: 'white', fontSize: '48px', fontWeight: 700, textAlign: 'center', maxWidth: '900px', lineHeight: 1.2 }}>
           Boulder Package Testing
         </div>
-        <div style={{ color: '#3DA9C7', fontSize: '28px', fontWeight: 600, marginTop: '16px', textAlign: 'center' }}>
+        <div style={{ color: '#2968A0', fontSize: '28px', fontWeight: 600, marginTop: '16px', textAlign: 'center' }}>
           Medical Device Package Validation
         </div>
         <div style={{ color: 'rgba(255,255,255,0.6)', fontSize: '18px', marginTop: '24px', textAlign: 'center', maxWidth: '700px' }}>

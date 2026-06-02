@@ -116,8 +116,18 @@ export default async function Page({ params }: PageProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
           <article className="lg:col-span-2">
-            <div className="prose prose-navy max-w-none">
-              <p className="text-navy/80 leading-relaxed">[CONTENT]</p>
+            <div className="max-w-none">
+              {article.body.map((block, i) =>
+                block.startsWith('## ') ? (
+                  <h2 key={i} className="text-xl font-bold text-navy mt-8 mb-3">
+                    {block.replace(/^##\s+/, '')}
+                  </h2>
+                ) : (
+                  <p key={i} className="text-navy/80 leading-relaxed mb-4">
+                    {block}
+                  </p>
+                ),
+              )}
             </div>
 
             {related.length > 0 && (

@@ -1,20 +1,44 @@
 @import "tailwindcss";
 
+/* ===== Boulder BioMed family brand tokens — see /docs/brand-style-guide.html =====
+   Lato everywhere · Boulder Blue primary · Navy dark/footer · Green accent.
+   The retired teal token is repointed to Boulder Blue so any legacy `teal`
+   utility class (bg-teal, text-teal, border-teal) resolves to the brand primary. */
 :root {
+  --color-boulder-blue: #2968A0;
   --color-navy: #0B2545;
-  --color-teal: #3DA9C7;
-  --color-gray-light: #F2F4F7;
-  --color-gray-medium: #D1D5DB;
+  --color-sky-blue: #5B8FC7;
+  --color-green: #75D69C;
+  --color-slate: #414856;
+  --color-ink: #2A2A2A;
+  --color-boulder-gray: #C9CFD6;
+  --color-cloud: #F4F6F8;
+  /* legacy aliases — repointed to brand palette */
+  --color-teal: #2968A0;
+  --color-teal-dark: #1F5180;
+  --color-gray-light: #F4F6F8;
+  --color-gray-medium: #C9CFD6;
   --color-text: #0B2545;
-  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --radius: 6px;
+  --font-sans: 'Lato', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
 @theme inline {
+  --color-boulder-blue: #2968A0;
   --color-navy: #0B2545;
-  --color-teal: #3DA9C7;
-  --color-gray-light: #F2F4F7;
-  --color-gray-medium: #D1D5DB;
-  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --color-sky-blue: #5B8FC7;
+  --color-green: #75D69C;
+  --color-slate: #414856;
+  --color-ink: #2A2A2A;
+  --color-boulder-gray: #C9CFD6;
+  --color-cloud: #F4F6F8;
+  /* legacy aliases — repointed to brand palette */
+  --color-teal: #2968A0;
+  --color-teal-dark: #1F5180;
+  --color-gray-light: #F4F6F8;
+  --color-gray-medium: #C9CFD6;
+  --radius: 6px;
+  --font-sans: 'Lato', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
 body {
@@ -22,3 +46,13 @@ body {
   color: var(--color-navy);
   font-family: var(--font-sans);
 }
+
+.btn {
+  display: inline-block; padding: 0.7rem 1.3rem; border-radius: var(--radius);
+  font-weight: 700; font-size: 0.95rem; text-decoration: none; cursor: pointer;
+  border: 1px solid transparent; transition: all 0.15s ease;
+}
+.btn-primary { background: var(--color-boulder-blue); color: #fff; border-color: var(--color-boulder-blue); }
+.btn-primary:hover { background: var(--color-teal-dark); color: #fff; text-decoration: none; }
+.btn-secondary { background: transparent; color: var(--color-boulder-blue); border: 1px solid var(--color-boulder-blue); }
+.btn-secondary:hover { background: var(--color-boulder-blue); color: #fff; text-decoration: none; }

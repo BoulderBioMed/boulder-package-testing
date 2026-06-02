@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import Hero from '@/components/Hero';
 import ServiceCard from '@/components/ServiceCard';
 import StandardBadge from '@/components/StandardBadge';
@@ -210,6 +211,9 @@ export default function HomePage() {
                 </div>
               </div>
             ))}
+          </div>
+          <div className="mt-10">
+            <Image src="/img/sterilization-to-test-transfer.png" alt="Chain of custody - sterilized devices transferred from sterilization to package testing on one campus" width={1600} height={900} sizes="(max-width: 1280px) 100vw, 1280px" loading="lazy" className="w-full rounded-lg shadow-lg h-auto" style={{ objectFit: 'cover' }} />
           </div>
         </div>
       </section>
